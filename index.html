@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+  <link rel="stylesheet" href ="styles.css">
+  <script src ="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+  <div id = "timer">0</div>
+
+
+  <div id = "text-display-container">
+  <div id = "text-display">The quick brown fox jumps over the lazy dog </div>
+  
+
+  <div id = "selection-button-container">
+    
+    <h1 class = "selectortitle" id = text-type-title>Text Type</h1>
+    <button class = "select-button" id = "select-random-words-button" onclick = "selectRandomWords()">Random Words</button>
+    <button class = "select-button" id = "select-quotes-button" onclick = "selectQuotes()">Quotes</button>
+    <button class = "select-button" id = "select-paragraphs-button" onclick = "selectParagraphs()">Paragraphs</button>
+    
+    <h1 class = "selectortitle" id = limit-type-title>Limit Type</h1>
+    <button class = "select-button" id = "select-time-button" onclick = "selectTime()">Time</button>
+    <button class = "select-button" id = "select-text-button" onclick = "selectText()">Text</button>
+
+    <h1 class = "selectortitle" id = limit-title>Limit</h1>
+    <button class = "select-button" id = "limit-1-button" onclick = "selectLimit1()"> 1 </button>
+    <button class = "select-button" id = "limit-2-button" onclick = "selectLimit2()"> 2 </button>
+    <button class = "select-button" id = "limit-3-button" onclick = "selectLimit3()"> 3 </button>
+    <button class = "select-button" id = "limit-4-button" onclick = "selectLimit4()"> 4 </button>
+
+  </div>
+
+  <div id = "input-container">
+    <textarea id = "input-box" onpaste="return false;"></textarea>
+  </div>
+
+</div>
+
+
+
+
+<div id = "button-container">
+  <button class = "button" id = "new-test-button" onclick="startTest()">New Test</button>
+  <button class = "button" id = "test-type-button" onclick = "showSelectionScreen()">Test Type</button>
+</div>
+
+
+
+<button id = "profile-button" onclick = "window.location.href='profile.php'">Profile</button>
+</body>
+</html>
+
